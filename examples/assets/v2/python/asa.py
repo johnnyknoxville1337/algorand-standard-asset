@@ -80,7 +80,7 @@ params = algod_client.suggested_params()
 # params.fee = 1000
 # params.flat_fee = True
 
-# Account 1 creates an asset called latinum and
+# Account 1 creates an asset called phoenix and
 # sets Account 2 as the manager, reserve, freeze, and clawback address.
 # Asset Creation transaction
 
@@ -315,7 +315,7 @@ params = algod_client.suggested_params()
 # comment these two lines if you want to use suggested params
 # params.fee = 1000
 # params.flat_fee = True
-# The freeze address (Account 2) freezes Account 3's latinum holdings.
+# The freeze address (Account 2) freezes Account 3's phoenix holdings.
 
 txn = AssetFreezeTxn(
     sender=accounts[2]['pk'],
@@ -350,7 +350,7 @@ print_asset_holding(algod_client, accounts[3]['pk'], asset_id)
 
 # REVOKE ASSET
 
-# The clawback address (Account 2) revokes 10 latinum from Account 3 and places it back with Account 1.
+# The clawback address (Account 2) revokes 10 phoenix from Account 3 and places it back with Account 1.
 params = algod_client.suggested_params()
 # comment these two lines if you want to use suggested params
 # params.fee = 1000
